@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Reserva Hostel</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+<h2>Reserva de Hostel</h2>
+<form id="reservaForm">
+<input type="text" id="nome" placeholder="Nome do hóspede" required />
+<select id="tipoQuarto">
+<option value="Compartilhado">Compartilhado</option>
+<option value="Privativo Simples">Privativo Simples</option>
+<option value="Privativo Luxo">Privativo Luxo</option>
+</select>
+<input type="number" id="diarias" placeholder="Número de diárias" min="1" required />
+<label><input type="checkbox" id="cafe" /> Café da manhã</label>
+<button type="submit">Registrar Reserva</button>
+</form>
+
+<table>
+<thead>
+<tr>
+<th>Hóspede</th>
+<th>Tipo</th>
+<th>Diárias</th>
+<th>Café</th>
+<th>Valor Total</th>
+<th>Ações</th>
+</tr>
+</thead>
+<tbody id="tabelaReservas"></tbody>
+</table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
